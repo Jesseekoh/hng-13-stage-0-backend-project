@@ -3,7 +3,7 @@ import { rateLimit } from "express-rate-limit";
 import axios from "axios";
 import cors from "cors";
 import { pinoHttp } from "pino-http";
-import logger from "./utils/logger";
+import logger from "./utils/logger.js";
 
 const app = express();
 const limiter = rateLimit({
@@ -32,8 +32,8 @@ app.get("/me", async (req, res) => {
     });
 
     catFact = response.data.fact;
-  } catch (apiError) {
-    logger.warn("Cat Facts API error", apiError);
+  } catch (error) {
+    logger.warn(error, "Cat Facts API error");
     catFact =
       "Cats' hearing stops at 65 khz (kilohertz); humans' hearing stops at 20 khz.";
   }
