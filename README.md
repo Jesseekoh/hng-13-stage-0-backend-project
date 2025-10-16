@@ -165,7 +165,7 @@ The API implements graceful error handling for:
 - **HTTP Client:** Axios
 - **Environment Management:** dotenv
 - **Package Manager:** pnpm
-- **Development:** tsx (for TypeScript execution)
+
 
 ### Dependencies
 
@@ -178,8 +178,6 @@ The API implements graceful error handling for:
 - `pino` (^10.0.0) - Fast JSON logger
 - `pino-http` (^11.0.0) - HTTP request logger for Pino
 - `pino-pretty` (^13.1.2) - Pretty printer for Pino logs
-- `tsx` (^4.20.6) - TypeScript execution engine
-
 **Development:**
 - `@types/cors` (^2.8.19) - TypeScript definitions for cors
 - `@types/express` (^5.0.3) - TypeScript definitions for Express
