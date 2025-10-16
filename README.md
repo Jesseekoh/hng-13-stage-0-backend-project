@@ -180,10 +180,12 @@ The API implements graceful error handling for:
 - `pino` (^10.0.0) - Fast JSON logger
 - `pino-http` (^11.0.0) - HTTP request logger for Pino
 - `pino-pretty` (^13.1.2) - Pretty printer for Pino logs
+
 **Development:**
 - `@types/cors` (^2.8.19) - TypeScript definitions for cors
 - `@types/express` (^5.0.3) - TypeScript definitions for Express
 - `@types/node` (^24.7.2) - TypeScript definitions for Node.js
+- `ts-node-dev` (^2.0.0) - Development server with hot reload
 - `typescript` (^5.9.3) - TypeScript compiler
 
 ## 🤝 Contributing
