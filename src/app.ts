@@ -3,7 +3,7 @@ import { rateLimit } from "express-rate-limit";
 import axios from "axios";
 import cors from "cors";
 import { pinoHttp } from "pino-http";
-import logger from "./utils/logger.js";
+import logger from "./utils/logger";
 
 const app = express();
 const limiter = rateLimit({
@@ -17,7 +17,7 @@ app.use(cors());
 
 app.use(limiter);
 
-app.get("/me", async (req, res) => {
+app.get("/me", async (_, res) => {
   const now = new Date();
   const user = {
     email: "Jesseekoh@outlook.com",
