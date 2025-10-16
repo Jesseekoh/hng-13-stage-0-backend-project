@@ -15,6 +15,8 @@
 
 This project is a RESTful API built with Node.js and Express that exposes a single endpoint returning user profile information combined with interesting cat facts from the [Cat Facts API](https://catfact.ninja/).
 
+[view Live Demo](https://hng-13-stage-0-backend-project-production.up.railway.app/me)
+
 ## ✨ Features
 
 - User profile endpoint with personal information
